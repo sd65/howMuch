@@ -1,0 +1,66 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: hidden;
+
+    background: url(bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: Arial;
+    text-shadow: 1px 1px #888;
+    color: white;
+}
+
+body > div {
+    display: flex;
+    flex-flow : row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 25vh;
+}
+
+body > div > p {
+    text-align: center;
+}
+
+span {
+    display: block;
+}
+
+p > span::before {
+    content: "$";
+}
+
+p {
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 10px;
+}
+
+body > div:nth-child(4) p  {
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+input:focus{
+outline:none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+input {
+    background: transparent none repeat scroll 0% 0%;
+    border: none;
+    border-bottom: 2px solid white;
+    color: #333;
+    font-size: 20px;
+    text-align: right;
+}
