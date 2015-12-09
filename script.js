@@ -1,8 +1,7 @@
 var input = document.querySelector('input');
 
 function numberWithCommas(num) {
-    if (num.match(/^0\..*/g)) return num;
-    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return num.toLocaleString('en-US');
 }
 
 function getInputValue() {
