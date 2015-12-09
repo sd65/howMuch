@@ -1,7 +1,7 @@
 var input = document.querySelector('input');
 
 function numberWithCommas(num) {
-    return num.toLocaleString('en-US');
+    return parseFloat(num).toLocaleString('en-US');
 }
 
 function getInputValue() {
