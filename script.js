@@ -9,9 +9,9 @@ function getInputValue() {
     return input.value.replace(/,/g, "");
 }
 
-function setContent(selector, value, accuracy = 2)
+function setContent(selector, value, accuracy)
 {
-
+    accuracy = accuracy || 2;
     value = parseFloat(value).toFixed(accuracy);
     document.querySelector(selector).textContent = numberWithCommas(value);
 }
