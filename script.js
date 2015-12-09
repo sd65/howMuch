@@ -38,13 +38,12 @@ var startTime = new Date();
 function updateSinceArrived() {
     var value = getInputValue();
     var nowTime = new Date();
-    var timeDiff = (nowTime - startTime) / 1000;
-    var seconds = Math.round(timeDiff % 60);
+    var seconds = (nowTime - startTime) / 1000;
     var moneySinceArrived = seconds * value / (30*12*60*60);
     setContent("#sinceArrived", moneySinceArrived, 4);
 }
 
-setInterval(updateSinceArrived, 100);
+setInterval(updateSinceArrived, 50);
 
 if(window.innerHeight > window.innerWidth){
     alert("Please rotate your device in landscape!");
