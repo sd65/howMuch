@@ -44,7 +44,7 @@ function updateSinceArrived() {
     setContent("#sinceArrived", moneySinceArrived, 4);
 }
 
-setInterval(updateSinceArrived, 1000);
+setInterval(updateSinceArrived, 100);
 
 if(window.innerHeight > window.innerWidth){
     alert("Please rotate your device in landscape!");
